@@ -1,0 +1,107 @@
+/*
+seletor{
+    propriedade:valor;
+}
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #060606;
+}
+
+div{
+    background-color: #F2E205;
+    width: 340px; /*largura (400-60 do padding)*/
+    /*height: 561px; /*altura*/  
+
+    margin-top: 80px;
+    /*centraliza a div*/
+    margin-left: auto;
+    margin-right: auto;
+
+    /*espaçamento interno*/
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+/*Moldando a imagem*/
+img{
+    width: 100px;
+    border:#060606 5px solid;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+h1{
+    color: #060606;    
+    font-size: 32px;   
+    margin: 0;     
+}
+
+h2{
+    color: #363636;
+    font-size: 20px;    
+    margin: 0;
+}
+
+p{
+    /*font-size: 16px; é o valor incial*/
+    color: #666666;
+
+}
+
+ul {
+    padding: 0;
+    list-style-type: none; /*Retirando o marcador da lista*/
+
+}
+/*Formatanddo todos os itens dentro de uma lista*/
+ul a {
+    background-color: #060606;
+    color: white;
+    display: block; /*Transformando o link em um bloco*/
+    margin-bottom: 5px; /*Separando os links*/
+    padding-top: 10px; /*Definindo os espaços do botão*/
+    padding-bottom: 10px;
+    border-radius: 3px; /*Arredondo as bordas*/
+    text-decoration: none;/*Retira os sublinhados*/
+
+}
+/*ao passar o mouse nos links que estão no <ul>*/
+ul a:hover{
+    background-color: #735703;
+    color: #060606;
+
+}
+
+#assinatura{
+    color: #060606;
+}
+
+#assinatura:hover{
+    font-style: italic;
+}
+
+/*
+    MEDIA QUERIES   
+    São condicionais normalmente referentes a largura de um dispositivo
+*/
+
+@media (max-width: 500px){
+
+    div{
+        width: 300px;
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    img{
+    width: 80px;
+    
+    }
+}
